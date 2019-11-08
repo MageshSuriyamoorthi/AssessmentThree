@@ -1,0 +1,14 @@
+loc.menu.alltabs=css:div#content>nav>ul>li>a>span
+
+loc.menu.tabs=css:div#content>nav>ul>li:nth-of-type(*)>a>span
+
+loc.merchandise.mens=css:div#content>nav>ul>li:nth-of-type(3)>ul>li:nth-of-type(1)>a
+
+loc.viewing.mens=css:#content #left_column h1
+
+loc.buynow.habanero=css:#left_column #products li:nth-of-type(1)>div:nth-of-type(3)>div 
+
+loc.select.redcolor=css:.product-options.modal.simplemodal-data div ul>li>ul .Red
+
+loc.select.malesize=.product-options.modal.simplemodal-data div .cf:nth-of-type(2) li:nth-of-type(2)
+

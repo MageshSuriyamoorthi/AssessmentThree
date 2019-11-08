@@ -1,0 +1,10 @@
+loc.menu.tabs=css:div#content>nav>ul>li>a>span
+
+loc.menu.tab=css:div#content>nav>ul>li:nth-of-type(*)>a>span
+
+loc.merchandise.tab=xpath://span[text()='Merchandise']
+
+loc.merchandise.mens=xpath://span[text()='MENS']
+
+loc.viewing.mens=#content #left_column h1
+

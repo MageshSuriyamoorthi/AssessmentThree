@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <suite-files>
+		<suite-file
+			path="./tutorialsninja/src/test/resources/com/atmecs/application/suite/TutorialsNinjaHomePage.xml" />
+		<suite-file
+			path="./tutorialsninja/src/test/resources/com/atmecs/application/suite/HotSauce.xml" />
+	</suite-files>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,13 @@
+loc.menu.tabs=css:#content nav li a span
+
+loc.home.tab=css:#content nav:first-child li:nth-child(1) a	
+
+loc.hotsauce.tab=css:#content nav:first-child li:nth-child(2) a	
+
+loc.merchandise.tab=css:#content nav:first-child li:nth-child(3) a	
+
+loc.clearance.tab=css:#content nav:first-child li:nth-child(4) a	
+
+loc.new.tab=css:#content nav:first-child li:nth-child(5) a	
+
+loc.faq.tab=css:#content nav:first-child li:nth-child(6) a	

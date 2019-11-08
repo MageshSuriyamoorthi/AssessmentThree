@@ -1,0 +1,53 @@
+package com.atmecs.tutorialsninja.testscripts;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.atmecs.tutorialsninja.scriptbase.HotSaucebase;
+import com.atmecs.tutorialsninja.testbase.TestSuiteBase;
+import com.atmecs.tutorialsninja.utils.AssertionAndValidationManager;
+
+public class HotSauce extends TestSuiteBase {
+	private AssertionAndValidationManager assertandvalidate = new AssertionAndValidationManager();
+	private HotSaucebase base = new HotSaucebase();
+	List<WebElement> list;
+	String actual,expected;
+
+	@BeforeTest
+	public void open_Url() {
+
+		utils.geturl(driver, propertyreader.getLocatorValue("config.url_two"));
+		utils.maximize(driver);
+	}
+
+	@Test
+	public void home_page() {
+		Actions action = new Actions(driver);
+
+		base.movetoelement(driver, propertyreader.getLocatorValue("loc.hotsauces.tab"));
+		base.movetoelement(driver, propertyreader.getLocatorValue("loc.merchandise.tab"));
+
+		base.movetoelement(driver, propertyreader.getLocatorValue("loc.clearance.tab"));
+
+		base.movetoelement(driver, propertyreader.getLocatorValue("loc.new.tab"));
+
+		base.movetoelement(driver, propertyreader.getLocatorValue("loc.home.tab"));
+
+		base.movetoelement(driver, propertyreader.getLocatorValue("loc.merchandise.tab"));
+
+		action.moveToElement(utils.findelement(driver, propertyreader.getLocatorValue("loc.merchandise.tab"))).build()
+				.perform();
+		utils.click(driver, propertyreader.getLocatorValue("loc.merchandise.mens"));
+		
+		actual=utils.getActual(driver, propertyreader.getLocatorValue("loc.viewing.mens"));
+		expected=assertandvalidate.getdataval(sheetno, sheetname, index);
+		
+		
+	}
+
+}

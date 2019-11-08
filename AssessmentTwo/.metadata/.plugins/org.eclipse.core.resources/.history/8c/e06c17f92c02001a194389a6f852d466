@@ -1,0 +1,16 @@
+loc.home.tab=xpath://span[text()='Home']
+
+loc.hotsauces.tab=xpath://span[text()='Hot Sauces']
+
+loc.clearance.tab=xpath://span[text()='Clearance']
+
+loc.merchandise.tab=xpath://span[text()='Merchandise']
+
+loc.new.tab=xpath://span[text()='New to Hot Sauce?']
+
+loc.faq.tab=xpath://span[text()='FAQ']
+
+loc.merchandise.mens=xpath://a[text()='Mens']
+
+loc.viewing.mens=#content #left_column h1
+

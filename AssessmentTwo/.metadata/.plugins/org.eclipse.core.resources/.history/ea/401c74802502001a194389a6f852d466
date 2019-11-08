@@ -1,0 +1,37 @@
+package com.atmecs.tutorialsninja.testscripts;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.atmecs.tutorialsninja.testbase.TestSuiteBase;
+import com.atmecs.tutorialsninja.utils.AssertionAndValidationManager;
+
+public class HotSauce extends TestSuiteBase {
+	private AssertionAndValidationManager assertandvalidate = new AssertionAndValidationManager();
+	List<WebElement> list;
+
+	@BeforeTest
+	public void open_Url() {
+
+		utils.geturl(driver, propertyreader.getLocatorValue("config.url_two"));
+		utils.maximize(driver);
+	}
+
+	
+
+	@Test
+	public void home_page() {
+		list = utils.findelements(driver, propertyreader.getLocatorValue("loc.menu.tabs"));
+		for (int mousehover = 1; mousehover <= list.size(); mousehover++) {
+			WebElement target = utils.replace(driver, propertyreader.getLocatorValue("loc.menu.tab"), mousehover);
+			Actions action=new Actions(driver);
+			action.click(target).perform();
+			wait.ThreadWait(4000);
+			action.moveByOffset(500, 500);
+		}
+	}
+}

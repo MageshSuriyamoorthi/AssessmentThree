@@ -1,0 +1,43 @@
+package com.atmecs.tutorialsninja.testscripts;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.atmecs.tutorialsninja.testbase.TestSuiteBase;
+import com.atmecs.tutorialsninja.utils.AssertionAndValidationManager;
+
+public class HotSauce extends TestSuiteBase {
+	private AssertionAndValidationManager assertandvalidate = new AssertionAndValidationManager();
+	WebElement target;
+
+	@BeforeTest
+	public void open_Url() {
+
+		utils.geturl(driver, propertyreader.getLocatorValue("config.url_two"));
+		utils.maximize(driver);
+	}
+
+	
+
+	@Test
+	public void home_page() {
+			Actions action = new Actions(driver);
+			 target = utils.findelement(driver, propertyreader.getLocatorValue("loc.hotsauce.tab"));
+			action.click().perform();
+			 target = utils.findelement(driver, propertyreader.getLocatorValue("loc.merchandise.tab"));
+			action.click().perform();
+			 target = utils.findelement(driver, propertyreader.getLocatorValue("loc.clearance.tab"));
+			action.click().perform();
+			 target = utils.findelement(driver, propertyreader.getLocatorValue("loc.new.tab"));
+			action.click().perform();
+			 target = utils.findelement(driver, propertyreader.getLocatorValue("loc.faq.tab"));
+			action.click().perform();
+			
+
+		}
+	}
+}

@@ -1,0 +1,3 @@
+loc.menu.tabs=css:#content nav li a span
+
+loc.menu.tab=css:#content nav:first-child li:nth-child(6)>a>span	

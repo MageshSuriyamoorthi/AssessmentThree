@@ -1,0 +1,27 @@
+package com.atmecs.tutorialsninja.scriptbase;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import com.atmecs.tutorialsninja.helper.PropertiesFileReader;
+import com.atmecs.tutorialsninja.utils.AssertionAndValidationManager;
+import com.atmecs.tutorialsninja.utils.UtilityFiles;
+import com.atmecs.tutorialsninja.utils.WaitsandSimpleAlert;
+
+public class HotSaucebase {
+	public Logger log = Logger.getLogger("Testbase files");
+	private PropertiesFileReader propertyreader = new PropertiesFileReader();
+	public WaitsandSimpleAlert wait = new WaitsandSimpleAlert();
+	public UtilityFiles utils = new UtilityFiles();
+	private AssertionAndValidationManager assertandvalidate = new AssertionAndValidationManager();
+	
+	public void movetoelement(WebDriver driver, String locator) {
+		Actions action = new Actions(driver);
+
+		action.moveToElement(utils.findelement(driver, locator)).build().perform();
+		log.info("Action performs");
+
+	}
+
+}

@@ -1,0 +1,3 @@
+loc.login.button=classname:btn btn-primary btn-lg btn-block loginbtn
+
+loc.demouser.text=css:.main-wrapper.scrollspy-action .col-md-6>div>div+div

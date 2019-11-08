@@ -1,0 +1,6 @@
+loc.login.button=classname:btn btn-primary btn-lg btn-block loginbtn
+
+loc.prompt.minimize=button[type='button'] .lc-1mpchac
+
+loc.demouser.text=css:.main-wrapper.scrollspy-action .col-md-6>div>div+div
+

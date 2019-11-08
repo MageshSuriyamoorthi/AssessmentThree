@@ -1,0 +1,22 @@
+loc.menu.alltabs=div#content>nav>ul>li>a>span
+
+loc.menu.tabs=div#content>nav>ul>li:nth-of-type(*)>a>span
+
+loc.home.tab=xpath://span[text()='Home']
+
+loc.hotsauces.tab=xpath://span[text()='Hot Sauces']
+
+loc.clearance.tab=xpath://span[text()='Clearance']
+
+loc.merchandise.tab=xpath://span[text()='Merchandise']
+
+loc.new.tab=xpath://span[text()='New to Hot Sauce?']
+
+loc.faq.tab=xpath://span[text()='FAQ']
+
+loc.merchandise.mens=xpath://a[text()='Mens']
+
+loc.viewing.mens=css:#content #left_column h1
+
+loc.buynow.habanero=css:#left_column #products li:nth-of-type(1)>div:nth-of-type(3)>div 
+

@@ -1,0 +1,4 @@
+loc.menu.tabs=css:#content nav li a span
+
+loc.menu.tab=css:div#content>nav>ul>li:nth-of-type(###)>a>span
+
